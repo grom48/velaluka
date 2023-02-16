@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "OpenSansExtraBold";
+  src: url("../../public/assets/fonts/OpenSans-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "OpenSansBold";
+  src: url("../../public/assets/fonts/OpenSans-Bold.ttf");
+}
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../../public/assets/fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: "OpenSansSemiBold";
+  src: url("../../public/assets/fonts/OpenSans-SemiBold.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,4 +23,79 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "OpenSansRegular";
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: $oceanBlue;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+.ham5 .top {
+  stroke-dasharray: 40 82;
+}
+.ham5 .bottom {
+  stroke-dasharray: 40 82;
+}
+.ham5.active .top {
+  stroke-dasharray: 14 82;
+  stroke-dashoffset: -72px;
+}
+.ham5.active .bottom {
+  stroke-dasharray: 14 82;
+  stroke-dashoffset: -72px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  transition: all 1s ease-in-out;
+  &:hover .dropdown-content {
+    display: block;
+    transition: all 1s ease-in-out;
+  }
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  transition: all 1s ease-in-out;
+  z-index: 1;
+  padding: 10px;
+  border-radius: 10px;
+  a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    &:hover {
+      background-color: #f1f1f1;
+      border-radius: 6px;
+    }
+  }
 }

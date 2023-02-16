@@ -1,0 +1,73 @@
+header {
+  background: url("../../../public/assets/img/bg-velaluka.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.overlay {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  right: 0;
+  background-color: $white;
+  top: 0;
+  transition: 0.6s;
+  z-index: 999;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 10px;
+    padding: 0;
+
+    li {
+      text-align: center;
+      font-size: 20px;
+      padding-bottom: 10px;
+      width: max-content;
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.hamburger {
+  z-index: 1000;
+  display: none;
+}
+
+.main-content {
+  h1 {
+    font-family: "OpenSansExtraBold";
+    font-size: 40px;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .main-content h1 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .links {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 796px) {
+  .main-content h1 {
+    font-size: 28px;
+  }
+}
