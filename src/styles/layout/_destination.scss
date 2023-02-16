@@ -1,0 +1,27 @@
+.visit-place:nth-child(odd) {
+  background-color: $babyBlue;
+}
+.visit-place:nth-child(even) {
+  background-color: $babyYellow;
+}
+
+.vacation-title {
+  font-family: "OpenSansBold";
+  font-size: 24px;
+  color: $black;
+  margin: 15px 0;
+}
+
+.quote {
+  font-family: "OpenSansBold";
+  color: $black;
+}
+
+@media only screen and (max-width: 1200px) {
+  .vacation-wrapper {
+    padding: 1rem;
+  }
+  .vacation-title {
+    font-size: 20px;
+  }
+}

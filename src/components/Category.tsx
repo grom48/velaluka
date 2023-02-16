@@ -9,7 +9,6 @@ import category from "@/pages/api/category";
 // Image imports
 import left from "../../public/assets/img/icons/left.svg";
 import right from "../../public/assets/img/icons/right.svg";
-import car from "../../public/assets/img/car-small.png";
 import Link from "next/link";
 
 const Category = () => {
@@ -18,7 +17,7 @@ const Category = () => {
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     // Remove controls
     dots: false,
@@ -26,6 +25,27 @@ const Category = () => {
     // Remove dots
     // Remove autoplay
     autoplay: false,
+
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 990,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 660,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   const handleNextSlide = () => {
@@ -48,7 +68,7 @@ const Category = () => {
           {category.map((el: any, index: number) => (
             <Link href={el.route} key={index}>
               <div className="box-info">
-                <div className="stats float-right flex bg-white rounded-full py-2 px-4 gap-1 items-center">
+                <div className="stats rounded-full flex py-2 px-4 gap-1 items-center">
                   <span>4.4</span>
                   <svg
                     width="18"

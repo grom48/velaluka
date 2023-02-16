@@ -57,6 +57,39 @@ const category: Categories[] = [
     stars: 5,
     route: "real-estate",
   },
+  {
+    id: 5,
+    title: "Real Estate",
+    desc: "500+ happy clients",
+    image: {
+      src: car,
+      alt: "Best Deal",
+    },
+    stars: 5,
+    route: "real-estate",
+  },
+  {
+    id: 6,
+    title: "Real Estate",
+    desc: "500+ happy clients",
+    image: {
+      src: car,
+      alt: "Best Deal",
+    },
+    stars: 5,
+    route: "real-estate",
+  },
+  {
+    id: 7,
+    title: "Real Estate",
+    desc: "500+ happy clients",
+    image: {
+      src: car,
+      alt: "Best Deal",
+    },
+    stars: 5,
+    route: "real-estate",
+  },
 ];
 
 export default category;

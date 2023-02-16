@@ -4,12 +4,44 @@
   font-family: "OpenSansBold";
 }
 
+@media only screen and (max-width: 1024px) {
+  .main-title {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .main-title {
+    font-size: 26px;
+  }
+}
+
 .box-info {
-  background-color: $babyBlue;
+  border: 1px solid $black;
   border-radius: 12px;
   margin: 10px;
-  width: 80% !important;
   padding: 10px;
+  transition: all 0.3s ease-in-out;
+
+  .stats {
+    float: right;
+    background-color: $babyYellow;
+    color: $black;
+    font-family: "OpenSansBold";
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    background-color: $babyBlue;
+    border: 1px solid $babyBlue;
+    -webkit-box-shadow: 6px 11px 10px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 11px 16px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 6px 10px -6px rgba(0, 0, 0, 0.75);
+
+    .stats {
+      background-color: $white;
+    }
+  }
 
   h3 {
     font-family: "OpenSansBold";

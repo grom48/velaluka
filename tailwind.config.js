@@ -13,6 +13,7 @@ module.exports = {
       oceanBlue: "#004597",
       white: "#fff",
       babyBlue: "#D6F3FF",
+      black: "#33333",
     },
     extend: {},
   },
