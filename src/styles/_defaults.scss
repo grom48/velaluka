@@ -99,3 +99,26 @@ body {
     }
   }
 }
+
+.toTopBtn {
+  /* position: fixed;
+  bottom: 20%;
+  left: 5%;
+  background-color: $green;
+  padding: 50px;
+  z-index: 1000; */
+
+  background-color: $oceanBlue;
+  border: none;
+  border-radius: 15%;
+  color: white;
+  cursor: pointer;
+  font-size: 26px;
+  height: 62px;
+  width: 62px;
+  transition: 0.3s ease;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+}

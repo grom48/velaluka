@@ -54,16 +54,25 @@ const Header = () => {
           <div className="overlay" style={{ width: isOpen ? "100%" : "0%" }}>
             <ul>
               <li>
-                <Link href="/">Home</Link>
+                <Link href={"/"}>Home</Link>
               </li>
               <li>
-                <Link href="/transfer">Transfer</Link>
+                <Link href="">Rents</Link>
               </li>
               <li>
-                <Link href="/about">About</Link>
+                <Link href={"/transfer"}>Tickets</Link>
               </li>
               <li>
-                <Link className="contact" href="/contact">
+                <Link href={"/insurance"}>Insurance</Link>
+              </li>
+              <li>
+                <Link href={"/vacation"}>Vacation</Link>
+              </li>
+              <li>
+                <Link href={"/real-estate"}>Real Estate</Link>
+              </li>
+              <li className="bg-oceanBlue py-3 px-7 rounded-full">
+                <Link className="text-white" href={"/contact"}>
                   Contact
                 </Link>
               </li>
