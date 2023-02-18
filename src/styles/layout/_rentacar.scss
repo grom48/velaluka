@@ -1,0 +1,32 @@
+.price-tag {
+  padding: 10px 0;
+
+  p {
+    font-family: "OpenSansBold";
+  }
+}
+
+.faq-item {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.faq-item .question {
+  font-size: 18px;
+  margin: 0;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.faq-item .answer {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  overflow: hidden;
+}
+
+.faq-item .answer.active {
+  overflow: visible;
+}
