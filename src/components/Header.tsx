@@ -107,7 +107,7 @@ const Header = () => {
             vacations and many more.
           </h1>
           <Link
-            href="/see-more"
+            href="#see-more"
             className="flex items-center gap-3 bg-oceanBlue rounded-full py-3 px-7 w-min"
           >
             <p className="w-max">See more</p>

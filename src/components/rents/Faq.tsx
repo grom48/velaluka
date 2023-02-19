@@ -1,24 +1,12 @@
 import React, { useState } from "react";
 
 import { motion } from "framer-motion";
-
+import Link from "next/link";
+import Contact from "./Contact";
 interface Faq {
   question: string;
   answer: string;
 }
-
-/* const faqs: Faq[] = [
-  {
-    id: 1,
-    question: "How To Make Appoitment",
-    answer: "You can book by website or by phone",
-  },
-  {
-    id: 2,
-    question: "How To Make Appoitment",
-    answer: "You can book by website or by phone",
-  },
-]; */
 
 interface FaqSectionProps {
   faqs: Faq[];
@@ -31,16 +19,15 @@ const Faq = ({ faqs }: FaqSectionProps) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
   return (
-    <section className="container mx-auto px-4">
+    <section className="container mx-auto px-4 py-5 grid md:grid-cols-1 lg:grid-cols-2 gap-5">
       <div className="faq-section">
+        <h2 className="main-title">FAQ</h2>
         {faqs.map((faq, index) => (
           <div className="faq-item" key={faq.question}>
             <motion.h3
               className={`question ${activeIndex === index ? "active" : ""}`}
               onClick={() => handleClick(index)}
-              initial={{ backgroundColor: "#f0f0f0" }}
               animate={{
-                backgroundColor: activeIndex === index ? "#d9d9d9" : "#f0f0f0",
                 transition: { duration: 0.3, ease: "easeInOut" },
               }}
             >
@@ -60,6 +47,7 @@ const Faq = ({ faqs }: FaqSectionProps) => {
           </div>
         ))}
       </div>
+      <Contact />
     </section>
   );
 };

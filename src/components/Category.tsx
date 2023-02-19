@@ -58,7 +58,7 @@ const Category = () => {
 
   return (
     <>
-      <section className="container mx-auto px-4 py-10">
+      <section className="container mx-auto px-4 py-10" id="see-more">
         <h2 className="main-title">Select Category</h2>
         <Slider
           {...settings}

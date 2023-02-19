@@ -9,19 +9,19 @@
 .faq-item {
   cursor: pointer;
   margin-bottom: 10px;
+  border: 1px solid #828282;
+  border-radius: 5px;
 }
 
 .faq-item .question {
   font-size: 18px;
   margin: 0;
   padding: 10px;
-  background-color: #f0f0f0;
-  border-radius: 5px;
+  font-family: "OpenSansBold";
 }
 
 .faq-item .answer {
   padding: 10px;
-  border: 1px solid #ccc;
   border-top: none;
   border-radius: 0 0 5px 5px;
   overflow: hidden;
@@ -29,4 +29,33 @@
 
 .faq-item .answer.active {
   overflow: visible;
+}
+
+input,
+textarea,
+select {
+  padding: 20px;
+  width: 100%;
+  border: 1px solid #828282;
+  background: transparent;
+  border-radius: 5px;
+  color: var(--white);
+}
+
+.submit-btn {
+  border: none;
+  outline: none;
+  background: $oceanBlue;
+  color: $white;
+  border-radius: 5px;
+  padding: 20px;
+  font-family: "OpenSansBold";
+}
+
+@media only screen and (max-width: 769px) {
+  input,
+  textarea,
+  select {
+    padding: 10px;
+  }
 }

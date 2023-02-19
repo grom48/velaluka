@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Faq from "@/components/rents/Faq";
 import Navbar from "@/components/rents/Navbar";
 import Price from "@/components/rents/Price";
@@ -28,6 +29,7 @@ const rentalCar = () => {
       <Rents />
       <Price />
       <Faq faqs={faqs} />
+      <Footer />
     </>
   );
 };
