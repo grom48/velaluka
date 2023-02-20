@@ -8,11 +8,17 @@ interface Faq {
   answer: string;
 }
 
-interface FaqSectionProps {
-  faqs: Faq[];
+interface Option {
+  option: String;
+  value: String;
 }
 
-const Faq = ({ faqs }: FaqSectionProps) => {
+interface Props {
+  faqs: Faq[];
+  option: Option[];
+}
+
+const Faq = ({ faqs, option }: Props) => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const handleClick = (index: number) => {
@@ -47,7 +53,7 @@ const Faq = ({ faqs }: FaqSectionProps) => {
           </div>
         ))}
       </div>
-      <Contact />
+      <Contact option={option} />
     </section>
   );
 };

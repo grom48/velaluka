@@ -19,7 +19,8 @@ type Submit = {
   submitted: boolean;
   setSubmitted: React.Dispatch<React.SetStateAction<boolean>>;
 };
-const Contact = () => {
+
+const Contact = ({ option }: any) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -92,10 +93,9 @@ const Contact = () => {
           value={selectedVehicle}
           onChange={(e) => setSelectedVehicle(e.target.value)}
         >
-          <option value="Choose">Choose Car</option>
-          <option value="Chevrolet Lacetti">Chevrolet Lacetti</option>
-          <option value="Chevrolet Aveo 1.4">Chevrolet Aveo 1.4</option>
-          <option value="Chevrolet Aveo 1.2">Chevrolet Aveo 1.2</option>
+          {option.map((el: any) => (
+            <option value={el.value}>{el.option}</option>
+          ))}
         </select>
         <textarea
           onChange={(e) => {

@@ -27,10 +27,10 @@ const Header = () => {
             <div className="dropdown">
               <button className="dropbtn">Rents</button>
               <div className="dropdown-content">
-                <Link href={"/renta-car"}>Renta Car</Link>
-                <Link href={"/renta-scooter"}>Renta Scooter</Link>
-                <Link href={"/renta-boat"}>Renta Boat</Link>
-                <Link href={"/renta-bicycle"}>Renta Bicycle</Link>
+                <Link href={"/car-rental"}>Renta Car</Link>
+                <Link href={"/scooter-rental"}>Renta Scooter</Link>
+                <Link href={"/boat-rental"}>Renta Boat</Link>
+                <Link href={"/bicycle-rental"}>Renta Bicycle</Link>
               </div>
             </div>
             <li>
@@ -122,7 +122,7 @@ const Header = () => {
                 d="M19.213 20.5189C19.0286 20.675 18.7953 20.7547 18.5581 20.7425C18.3208 20.7304 18.0962 20.6273 17.9273 20.4531C17.7584 20.2788 17.6572 20.0457 17.643 19.7985C17.6288 19.5512 17.7027 19.3072 17.8504 19.1132L24.7597 11.9088L1.96406 11.9088C1.71003 11.9088 1.46627 11.8043 1.28574 11.6179C1.10522 11.4316 1.00253 11.1784 0.999985 10.9136C0.999985 10.647 1.10156 10.3913 1.28236 10.2027C1.46316 10.0142 1.70837 9.9083 1.96406 9.9083L24.758 9.9083L17.8488 2.71898C17.6717 2.5286 17.5727 2.27381 17.5727 2.00859C17.5727 1.74338 17.6717 1.48858 17.8488 1.2982C17.9377 1.20378 18.0437 1.12877 18.1607 1.07756C18.2777 1.02636 18.4032 0.999983 18.5301 0.999983C18.657 0.999983 18.7826 1.02636 18.8996 1.07756C19.0165 1.12877 19.1225 1.20378 19.2114 1.2982L27.7563 10.2049C27.9325 10.3927 28.0311 10.645 28.0311 10.9077C28.0311 11.1704 27.9325 11.4227 27.7563 11.6106L19.213 20.5189Z"
                 fill="white"
                 stroke="white"
-                stroke-width="0.6"
+                strokeWidth="0.6"
               />
             </svg>
           </Link>

@@ -1,4 +1,6 @@
 import car from "../../../public/assets/img/car-small.png";
+import chevy2 from "../../../public/assets/img/chevy2.webp";
+import chevy3 from "../../../public/assets/img/chevy3.webp";
 
 interface Cars {
   id: number;
@@ -27,7 +29,7 @@ const cars: Cars[] = [
     title: "Chevrolet Aveo 1.4",
     spec: "Eurosuper 95 AC Car radio Airbag 5 doors",
     image: {
-      src: car,
+      src: chevy2,
       alt: "Chevrolet Lacetti - rental car in Vela Luka Korčula",
     },
     stars: 3,
@@ -37,7 +39,7 @@ const cars: Cars[] = [
     title: "Chevrolet Aveo 1.2",
     spec: "Eurosuper 95 AC Car radio Airbag 5 doors",
     image: {
-      src: car,
+      src: chevy3,
       alt: "Chevrolet Lacetti - rental car in Vela Luka Korčula",
     },
     stars: 3,

@@ -1,8 +1,9 @@
+import React from "react";
 import Footer from "@/components/Footer";
+import Bicycle from "@/components/rents/Bicycle";
 import Faq from "@/components/rents/Faq";
 import Navbar from "@/components/rents/Navbar";
 import Price from "@/components/rents/Price";
-import Rents from "@/components/rents/Rents";
 
 const faqs = [
   {
@@ -21,17 +22,22 @@ const faqs = [
       "You can get started with Next.js by following the documentation and tutorials on the official website.",
   },
 ];
-
-const rentalCar = () => {
+const option = [
+  {
+    option: "Mountain Bike Cube",
+    value: "Mountain Bike Cube",
+  },
+];
+const BicycleRental = () => {
   return (
     <>
       <Navbar />
-      <Rents />
+      <Bicycle />
       <Price />
-      <Faq faqs={faqs} />
+      <Faq faqs={faqs} option={option} />
       <Footer />
     </>
   );
 };
 
-export default rentalCar;
+export default BicycleRental;

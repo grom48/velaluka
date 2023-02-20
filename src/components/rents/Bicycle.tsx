@@ -1,14 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import cars from "@/pages/api/cars";
-
-const Rents = () => {
+import bicycle from "@/pages/api/bicycle";
+const Bicycle = () => {
   return (
     <>
       <section className="container mx-auto px-4">
-        <h1 className="main-title">Best rental cars in Vela Luka</h1>
+        <h1 className="main-title">Best rental scooters in Vela Luka</h1>
         <div className="cars-wrapper grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 py-5">
-          {cars.map((el: any, index: number) => (
+          {bicycle.map((el: any, index: number) => (
             <div className="box-info flex flex-col justify-between" key={index}>
               <div className="stats rounded-full w-min float-right flex py-2 px-4 gap-1 items-center">
                 <span>4.4</span>
@@ -38,4 +37,4 @@ const Rents = () => {
   );
 };
 
-export default Rents;
+export default Bicycle;

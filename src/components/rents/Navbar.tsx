@@ -22,10 +22,10 @@ const Navbar = () => {
         <div className="dropdown">
           <button className="dropbtn">Rents</button>
           <div className="dropdown-content">
-            <Link href={"/renta-car"}>Renta Car</Link>
-            <Link href={"/renta-scooter"}>Renta Scooter</Link>
-            <Link href={"/renta-boat"}>Renta Boat</Link>
-            <Link href={"/renta-bicycle"}>Renta Bicycle</Link>
+            <Link href={"/car-rental"}>Renta Car</Link>
+            <Link href={"/scooter-rental"}>Renta Scooter</Link>
+            <Link href={"/boat-rental"}>Renta Boat</Link>
+            <Link href={"/bicycle-rental"}>Renta Bicycle</Link>
           </div>
         </div>
         <li>
