@@ -1,0 +1,78 @@
+.offer-insurance {
+  margin-top: 10%;
+}
+
+.insuranceTitle {
+  color: $black;
+  font-family: "OpenSansBold";
+  font-size: 28px;
+}
+
+.price-selection h4 {
+  font-family: "OpenSansBold";
+}
+
+.second {
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+.bigTitle {
+  font-family: "OpenSansExtraBold";
+  width: 80%;
+  font-size: 64px;
+  color: $black;
+}
+
+@media only screen and (max-width: 1200px) {
+  .bigTitle {
+    font-size: 48px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .travel {
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .bigTitle {
+    font-size: 36px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .bigTitle {
+    font-size: 28px;
+    width: 100%;
+  }
+}
+
+.why {
+  padding: 150px 0;
+
+  p {
+    color: #a3a3a3;
+    font-family: "OpenSansRegular";
+  }
+}
+
+.whyTitle {
+  font-size: 22px;
+  font-family: "OpenSansBold";
+  color: $black;
+}
+
+.location .main-title {
+  display: none !important;
+}
+
+@media only screen and (max-width: 500px) {
+  .btnInsure {
+    flex-direction: column !important;
+    align-items: start;
+    gap: 0;
+  }
+}

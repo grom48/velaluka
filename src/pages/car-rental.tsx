@@ -6,19 +6,32 @@ import Rents from "@/components/rents/Rents";
 
 const faqs = [
   {
-    question: "What is Next.js?",
+    question: "Which documents I need to rent a car?",
     answer:
-      "Next.js is a React framework for building server-side rendered and static web applications.",
+      "When signing the contract, a valid driver's license must be attached to the passport or identity card.",
   },
   {
-    question: "What are the benefits of using Next.js?",
-    answer:
-      "Some benefits of using Next.js include automatic code splitting, server-side rendering, and optimized performance.",
+    question: "What is the minimum driver age?",
+    answer: "The minimum age of the driver is 21 years.",
   },
   {
-    question: "How do I get started with Next.js?",
+    question: "What is the minimum rental period?",
+    answer: "The minimum rental period is 12 hours.",
+  },
+  {
+    question: "Is fuel included in the price?",
     answer:
-      "You can get started with Next.js by following the documentation and tutorials on the official website.",
+      "Fuel is not included in the price. The vehicle should be returned with the same amount of fuel that you found when you picked it up.",
+  },
+  {
+    question: "What if the reservation is cancelled?",
+    answer:
+      "In case of cancellation of the reservation, the agency keeps the advance paid to confirm the reservation.",
+  },
+  {
+    question: "What insurance is included in the price?",
+    answer:
+      "Liability insurance for damage caused to a third party. CDW (Collision Damage Waiver) - risk insurance with participation in damages. The user's liability for damage and theft is limited to the amount of the deductible/participation in damage.",
   },
 ];
 const option = [

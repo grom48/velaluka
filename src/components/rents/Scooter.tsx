@@ -25,7 +25,11 @@ const Scooter = () => {
                 </svg>
               </div>
               <div className="rent-content flex flex-col justify-between">
-                <Image src={el.image.src} alt={el.image.alt} />
+                <Image
+                  src={el.image.src}
+                  className="w-2/4"
+                  alt={el.image.alt}
+                />
                 <h3>{el.title}</h3>
                 <p>{el.spec}</p>
               </div>

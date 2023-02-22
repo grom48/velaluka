@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <>
       <header>
-        <nav className="container mx-auto px-4 flex items-center justify-between">
+        <nav className="container mx-auto text-black px-4 flex items-center justify-between">
           <div className="logo">
             <Link href="/">
               <Image src={logo} alt="Atlas Vela Luka Touristic Agency Logo" />
@@ -103,8 +103,8 @@ const Header = () => {
         <div className="main-content container mx-auto px-4 text-white flex flex-col gap-2 h-5/6 justify-end">
           <p>Tourist Agency</p>
           <h1>
-            Everything in one place, renting scooters, bikes, cars, boats,
-            vacations and many more.
+            Everything in one place, insurance, renting scooters, bikes, cars,
+            boats, vacations and many more.
           </h1>
           <Link
             href="#see-more"

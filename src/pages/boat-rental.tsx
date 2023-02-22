@@ -6,19 +6,24 @@ import Price from "@/components/rents/Price";
 import React from "react";
 const faqs = [
   {
-    question: "What is Next.js?",
-    answer:
-      "Next.js is a React framework for building server-side rendered and static web applications.",
+    question: "Is insurance mandatory?",
+    answer: "Yes it's necessary if you want to rent a boat",
   },
   {
-    question: "What are the benefits of using Next.js?",
+    question:
+      "Why should Croatia arrange compulsory insurance for boats and yachts?",
     answer:
-      "Some benefits of using Next.js include automatic code splitting, server-side rendering, and optimized performance.",
+      "Obvezno osiguranje plovila pokriva odgovornost vlasnika odnosno korisnika brodice ili jahte za naknadu štete zbog smrti, ozljede tijela, narušenja zdravlja plivača, ronilaca ili ljudi na kopnu. Vlasnici plovila su obvezni osigurati plovilo svake godine, a osiguranje se ugovara na godinu dana.",
   },
   {
-    question: "How do I get started with Next.js?",
+    question: "What is covered?",
     answer:
-      "You can get started with Next.js by following the documentation and tutorials on the official website.",
+      "Liability for damage you cause to others, in case you kill, injure or harm someone with your vessel. The insured amount is prescribed by law and amounts to €464,529.83 (HRK 3,500,000.00) per event.",
+  },
+  {
+    question: "Are there any additional options?",
+    answer:
+      "Voluntary accident insurance. Insurance of the person driving the vessel and the passengers from the consequences of an accident.",
   },
 ];
 const option = [
