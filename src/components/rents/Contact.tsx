@@ -86,7 +86,7 @@ const Contact = ({ option }: any) => {
           placeholder="Date"
           name="date"
         />
-        <label htmlFor="cars">Select vehicle type</label>
+        <label htmlFor="cars">Select option</label>
         <select
           name="cars"
           id=""

@@ -1,4 +1,5 @@
 import cube from "../../../public/assets/img/cube-bicycle.webp";
+import bike2 from "../../../public/assets/img/bike2.webp";
 
 interface Bicycle {
   id: number;
@@ -18,6 +19,16 @@ const bicycle: Bicycle[] = [
     spec: "",
     image: {
       src: cube,
+      alt: "Mountain Bike Cube- rental scooter in Vela Luka Korčula",
+    },
+    stars: 3,
+  },
+  {
+    id: 1,
+    title: "Bike",
+    spec: "",
+    image: {
+      src: bike2,
       alt: "Mountain Bike Cube- rental scooter in Vela Luka Korčula",
     },
     stars: 3,

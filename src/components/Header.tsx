@@ -40,7 +40,7 @@ const Header = () => {
               <Link href={"/insurance"}>Insurance</Link>
             </li>
             <li>
-              <Link href={"/vacation"}>Vacation</Link>
+              <Link href={"/excursion"}>Excursion</Link>
             </li>
             <li>
               <Link href={"/real-estate"}>Real Estate</Link>
@@ -66,7 +66,7 @@ const Header = () => {
                 <Link href={"/insurance"}>Insurance</Link>
               </li>
               <li>
-                <Link href={"/vacation"}>Vacation</Link>
+                <Link href={"/excursion"}>Excursion</Link>
               </li>
               <li>
                 <Link href={"/real-estate"}>Real Estate</Link>
