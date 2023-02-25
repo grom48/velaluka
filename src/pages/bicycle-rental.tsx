@@ -4,6 +4,7 @@ import Bicycle from "@/components/rents/Bicycle";
 import Faq from "@/components/rents/Faq";
 import Navbar from "@/components/rents/Navbar";
 import Price from "@/components/rents/Price";
+import Contact from "@/components/rents/Contact";
 
 const faqs = [
   {
@@ -34,7 +35,10 @@ const BicycleRental = () => {
       <Navbar />
       <Bicycle />
       <Price />
-      <Faq faqs={faqs} option={option} />
+      <div className="container mx-auto px-4 py-10 grid md:grid-cols-1 lg:grid-cols-2 gap-5">
+        <Faq faqs={faqs} />
+        <Contact option={option} />
+      </div>
       <Footer />
     </>
   );

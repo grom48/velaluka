@@ -3,7 +3,7 @@ import Boat from "@/components/rents/Boat";
 import Faq from "@/components/rents/Faq";
 import Navbar from "@/components/rents/Navbar";
 import Price from "@/components/rents/Price";
-import React from "react";
+import Contact from "@/components/rents/Contact";
 const faqs = [
   {
     question: "Is insurance mandatory?",
@@ -50,7 +50,10 @@ const BoatRental = () => {
       <Navbar />
       <Boat />
       <Price />
-      <Faq faqs={faqs} option={option} />
+      <div className="container mx-auto px-4 py-10 grid md:grid-cols-1 lg:grid-cols-2 gap-5">
+        <Faq faqs={faqs} />
+        <Contact option={option} />
+      </div>
       <Footer />
     </>
   );

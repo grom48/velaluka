@@ -24,9 +24,9 @@ const faqs = [
       "Fuel is not included in the price. The vehicle should be returned with the same amount of fuel that you found when you picked it up.",
   },
   {
-    question: "What if the reservation is cancelled?",
+    question: "Can reservation be changed or cancelled?",
     answer:
-      "In case of cancellation of the reservation, the agency keeps the advance paid to confirm the reservation.",
+      "A reservation must do so in writing (via e-mail or GSM). Changes constitute a change in the renters name or the date of the commencement and/or end date of the service. If the renter cancels a reservation up to 14 days before the designated pick-up time a 15,00 € cancellation fee will be charged. If the renter cancels a reservation within 14 days before the designated pick-up time, does not pick up the rental car or cancels reservation after the designated pick-up time a 20% cancellation fee of the total amount of the reservation will be charged.",
   },
   {
     question: "What insurance is included in the price?",

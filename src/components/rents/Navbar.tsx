@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../../public/assets/img/logo.svg";
+import logo from "../../../public/assets/img/logo.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -9,7 +9,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="container mx-auto px-4 flex items-center justify-between">
+    <nav className="container mx-auto px-4 pt-5 flex items-center justify-between">
       <div className="logo">
         <Link href="/">
           <Image src={logo} alt="Atlas Vela Luka Touristic Agency Logo" />
@@ -38,6 +38,9 @@ const Navbar = () => {
           <Link href={"/excursion"}>Excursion</Link>
         </li>
         <li>
+          <Link href={"/accommodation"}>Accommodation</Link>
+        </li>
+        <li>
           <Link href={"/real-estate"}>Real Estate</Link>
         </li>
         <li className="bg-oceanBlue py-3 px-7 rounded-full">
@@ -61,7 +64,10 @@ const Navbar = () => {
             <Link href={"/insurance"}>Insurance</Link>
           </li>
           <li>
-            <Link href={"/vacation"}>Vacation</Link>
+            <Link href={"/excursion"}>Excursion</Link>
+          </li>
+          <li>
+            <Link href={"/accommodation"}>Accommodation</Link>
           </li>
           <li>
             <Link href={"/real-estate"}>Real Estate</Link>

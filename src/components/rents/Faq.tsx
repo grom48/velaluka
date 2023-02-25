@@ -15,17 +15,16 @@ interface Option {
 
 interface Props {
   faqs: Faq[];
-  option: Option[];
 }
 
-const Faq = ({ faqs, option }: Props) => {
+const Faq = ({ faqs }: Props) => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const handleClick = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
   return (
-    <section className="container mx-auto px-4 py-5 grid md:grid-cols-1 lg:grid-cols-2 gap-5">
+    <section className="container mx-auto px-4 py-5">
       <div className="faq-section">
         <h2 className="main-title">FAQ</h2>
         {faqs.map((faq, index) => (
@@ -53,7 +52,6 @@ const Faq = ({ faqs, option }: Props) => {
           </div>
         ))}
       </div>
-      <Contact option={option} />
     </section>
   );
 };

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import { Snackbar, Alert } from "@mui/material";
 
 type Name = {
   name: string;
@@ -28,6 +29,9 @@ const Contact = ({ option }: any) => {
   const [selectedVehicle, setSelectedVehicle] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
+  const [formIncomplete, setFormIncomplete] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(false);
+
   const handleSubmit = (e: any) => {
     e.preventDefault();
     console.log("Sending");
@@ -38,6 +42,10 @@ const Contact = ({ option }: any) => {
       selectedVehicle,
       message,
     };
+    if (!name || !email || !date || !selectedVehicle || !message) {
+      setFormIncomplete(true);
+      return;
+    }
     fetch("/api/contact", {
       method: "POST",
       headers: {
@@ -49,7 +57,7 @@ const Contact = ({ option }: any) => {
       console.log("Response received");
       if (res.status === 200) {
         console.log("Response succeeded!");
-        setSubmitted(true);
+        setFormSubmitted(true);
         setName("");
         setDate("");
         setSelectedVehicle("");
@@ -60,6 +68,38 @@ const Contact = ({ option }: any) => {
 
   return (
     <div className="contact-section">
+      <Snackbar
+        open={formSubmitted}
+        autoHideDuration={6000}
+        onClose={() => setFormSubmitted(false)}
+        anchorOrigin={{
+          vertical: "top",
+          horizontal: "center",
+        }}
+        style={{
+          top: "50px",
+          left: "50%",
+          transform: "translate(-50%, 0)",
+        }}
+      >
+        <Alert severity="success">Form successfully submitted!</Alert>
+      </Snackbar>
+      <Snackbar
+        open={formIncomplete}
+        autoHideDuration={6000}
+        onClose={() => setFormIncomplete(false)}
+        anchorOrigin={{
+          vertical: "top",
+          horizontal: "center",
+        }}
+        style={{
+          top: "50px",
+          left: "50%",
+          transform: "translate(-50%, 0)",
+        }}
+      >
+        <Alert severity="warning">Please fill out all the form fields.</Alert>
+      </Snackbar>
       <h2 className="main-title">Contact for booking</h2>
       <form action="" className="flex flex-col gap-5">
         <input

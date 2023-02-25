@@ -19,6 +19,12 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/components/insurance/Offers.tsx",
+    "src/pages/croatia-osiguranje.jsx"
+  ],
   "exclude": ["node_modules"]
 }

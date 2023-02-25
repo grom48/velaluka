@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 
 // Image imports
-import logo from "../../public/assets/img/logo.svg";
+import logo from "../../public/assets/img/logo.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <>
       <header>
-        <nav className="container mx-auto text-black px-4 flex items-center justify-between">
+        <nav className="container mx-auto text-black px-4 pt-5 flex items-center justify-between">
           <div className="logo">
             <Link href="/">
               <Image src={logo} alt="Atlas Vela Luka Touristic Agency Logo" />
@@ -43,6 +43,9 @@ const Header = () => {
               <Link href={"/excursion"}>Excursion</Link>
             </li>
             <li>
+              <Link href={"/accommodation"}>Accommodation</Link>
+            </li>
+            <li>
               <Link href={"/real-estate"}>Real Estate</Link>
             </li>
             <li className="bg-oceanBlue py-3 px-7 rounded-full">
@@ -67,6 +70,9 @@ const Header = () => {
               </li>
               <li>
                 <Link href={"/excursion"}>Excursion</Link>
+              </li>
+              <li>
+                <Link href={"/accommodation"}>Accommodation</Link>
               </li>
               <li>
                 <Link href={"/real-estate"}>Real Estate</Link>

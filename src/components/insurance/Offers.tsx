@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import travelInsurance from "../../../public/assets/img/travel.png";
 import homeInsurance from "../../../public/assets/img/home1.png";
-
 const Offers = () => {
   return (
     <>
@@ -88,9 +87,9 @@ const Offers = () => {
               </Link>
               <Link
                 className="border-2 border-oceanBlue py-3 px-7 mt-10 rounded-full text-oceanBlue"
-                href="/contact"
+                href={"/croatia-osiguranje"}
               >
-                Download brochure
+                See brochure
               </Link>
             </div>
           </div>

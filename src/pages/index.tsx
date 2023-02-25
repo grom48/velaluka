@@ -7,6 +7,7 @@ import Destination from "@/components/Destination";
 import Who from "@/components/Who";
 import Journey from "@/components/Journey";
 import Footer from "@/components/Footer";
+import FindUs from "@/components/FindUs";
 
 export default function Home() {
   const [showButton, setShowButton] = useState(false);
@@ -44,6 +45,7 @@ export default function Home() {
       <Header />
       <Category />
       <Destination />
+      <FindUs />
       <Who />
       <Journey />
       <Footer />

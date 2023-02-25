@@ -39,5 +39,5 @@ export default function (req: any, res: any) {
     if (err) console.log(err);
     else console.log(info);
   });
-  res.status(200);
+  res.status(200).send();
 }

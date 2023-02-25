@@ -69,9 +69,11 @@ select {
   outline: none;
   background: $oceanBlue;
   color: $white;
-  border-radius: 5px;
-  padding: 20px;
-  font-family: "OpenSansBold";
+  font-family: "OpenSansRegular";
+  width: max-content;
+  border-radius: 30px;
+  padding: 10px 30px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 769px) {

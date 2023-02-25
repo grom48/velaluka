@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 //flex items-center justify-between
-import logo from "../../public/assets/img/logo.svg";
+import logo from "../../public/assets/img/logo.png";
 const Footer = () => {
   return (
     <footer className="footer">

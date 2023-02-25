@@ -64,18 +64,14 @@ const Trips = () => {
                 <span>Starting point: </span>Vela Luka ( City Center )
               </p>
               <p>
-                <span>Starting time: </span>8:00 AM
+                <span>Starting time: </span>According to agreement
               </p>
               <p>
-                <span>Arrival time: </span>9:15 AM
-              </p>
-              <p>
-                After arrival, transfer to smaller boats to go to the cave for
-                sightseeing. The return to the ship follows and the journey
-                continues towards the island of Vis - Komiža.
-              </p>
-              <p className="not-included">
-                *The price does not include a ticket to the Blue Cave.
+                It is located on the southern side of the island of Vis,
+                bordered by high cliffs that protect a beautiful pebble beach.
+                It is an idyllic place for swimming in the crystal clear sea
+                that will remain in your memory forever. Due to the natural
+                shade, it is also suitable for families with small children.
               </p>
             </div>
             <Link
@@ -94,18 +90,20 @@ const Trips = () => {
                 <span>Starting point: </span>Vela Luka ( City Center )
               </p>
               <p>
-                <span>Starting time: </span>8:00 AM
+                <span>Starting time: </span>According to agreement
               </p>
               <p>
-                <span>Arrival time: </span>9:15 AM
+                <span>Arrival time: </span>The schedule depends on your wishes
+                and requirements
               </p>
               <p>
-                After arrival, transfer to smaller boats to go to the cave for
-                sightseeing. The return to the ship follows and the journey
-                continues towards the island of Vis - Komiža.
+                <span>Price: </span>The price depends on the number of people,
+                and children have a discount.
               </p>
-              <p className="not-included">
-                *The price does not include a ticket to the Blue Cave.
+              <p>
+                Transportation, driver, lunch (fish or meat) and drinks are
+                included the price. We recommend bringing a bathing suit, towel,
+                face cream sun and diving equipment.
               </p>
             </div>
             <div className="flex items-center gap-10 btnInsure">
@@ -119,7 +117,7 @@ const Trips = () => {
                 className="border-2 border-oceanBlue py-3 px-7 mt-10 rounded-full text-oceanBlue"
                 href="/contact"
               >
-                Download brochure
+                Fishing Licence
               </Link>
             </div>
           </div>
