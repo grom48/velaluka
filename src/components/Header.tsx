@@ -1,9 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-
+import { motion } from "framer-motion";
 // Image imports
 import logo from "../../public/assets/img/logo.png";
+
+interface Faq {
+  question: string;
+  answer: string;
+}
+
+interface Props {
+  faqs: Faq[];
+}
+
+const faqs = [
+  {
+    question: "Rents",
+    answer: "Car rental",
+    answer2: "Scooter rental",
+    answer3: "Bicycle rental",
+    answer4: "Boat rental",
+  },
+];
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,6 +30,13 @@ const Header = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  const handleClick = (index: number) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
   return (
     <>
       <header>
@@ -71,10 +97,51 @@ const Header = () => {
               <li>
                 <Link href={"/excursion"}>Excursion</Link>
               </li>
-              <li>
+
+              {faqs.map((faq, index) => (
+                <div className="text-center text-xl" key={faq.question}>
+                  <motion.h3
+                    className={`question ${
+                      activeIndex === index ? "active" : ""
+                    }`}
+                    onClick={() => handleClick(index)}
+                    animate={{
+                      transition: { duration: 0.3, ease: "easeInOut" },
+                    }}
+                  >
+                    <li className="flex gap-3">{faq.question}</li>
+                  </motion.h3>
+                  <motion.div
+                    className={`answer ${
+                      activeIndex === index ? "active" : ""
+                    }`}
+                    initial={{ maxHeight: 0, opacity: 0 }}
+                    animate={{
+                      maxHeight: activeIndex === index ? 1000 : 0,
+                      opacity: activeIndex === index ? 1 : 0,
+                      transition: { duration: 0.3, ease: "easeInOut" },
+                    }}
+                  >
+                    <li>
+                      <Link href="car-rental">{faq.answer}</Link>
+                    </li>
+                    <li>
+                      <Link href={"scooter-rental"}>{faq.answer2}</Link>
+                    </li>
+                    <li>
+                      <Link href={"bicycle-rental"}>{faq.answer3}</Link>
+                    </li>
+                    <li>
+                      <Link href={"boat-rental"}>{faq.answer4}</Link>
+                    </li>
+                  </motion.div>
+                </div>
+              ))}
+
+              <li className="z-50">
                 <Link href={"/accommodation"}>Accommodation</Link>
               </li>
-              <li>
+              <li className="z-50">
                 <Link href={"/real-estate"}>Real Estate</Link>
               </li>
               <li className="bg-oceanBlue py-3 px-7 rounded-full">

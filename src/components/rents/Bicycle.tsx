@@ -1,6 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import bicycle from "@/pages/api/bicycle";
+
+import bike1 from "../../../public/assets/img/bike12.jpg";
+import bike2 from "../../../public/assets/img/bike22.jpg";
+
 const Bicycle = () => {
   return (
     <>
@@ -35,6 +39,10 @@ const Bicycle = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="px-4 py-10 grid md:grid-cols-1 lg:grid-cols-2 gap-5">
+          <Image className="rounded-xl" src={bike1} alt="Bicycle rental" />
+          <Image className="rounded-xl" src={bike2} alt="Bicycle rental" />
         </div>
       </section>
     </>

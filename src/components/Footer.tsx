@@ -17,10 +17,10 @@ const Footer = () => {
                 <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="/about">Terms and Conditions</Link>
+                <Link href="/terms-and-conditions">Terms and Conditions</Link>
               </li>
               <li>
-                <Link href="/quality-management">Policy and Privacy</Link>
+                <Link href="/policy-and-privacy">Policy and Privacy</Link>
               </li>
               <li>
                 <Link href="/contact">Contact us</Link>
@@ -29,14 +29,15 @@ const Footer = () => {
           </div>
           <div className="info">
             <Link
-              href="https://goo.gl/maps/3ursqQeUGwE1yhjr9"
+              href="https://goo.gl/maps/LhU437yGSuFeKJQV9"
               className="location"
             >
               Location
             </Link>
-            <Link href="mailto:info@asm.hr" className="telephone">
+            <Link href="mailto:velalukaatlas@gmail.com" className="telephone">
               Email
             </Link>
+            <Link href="tel:+385 91 610 0130">Telephone</Link>
           </div>
         </div>
         <div className="copyright__wrapper">

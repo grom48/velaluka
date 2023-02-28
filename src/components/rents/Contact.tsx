@@ -157,7 +157,7 @@ const Contact = ({ option }: any) => {
             Terms and conditions
           </Link>{" "}
           and{" "}
-          <Link className="text-oceanBlue underline" href="privacy-and-policy">
+          <Link className="text-oceanBlue underline" href="policy-and-privacy">
             Privacy policy
           </Link>{" "}
           of our website

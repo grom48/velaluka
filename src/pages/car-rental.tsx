@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer";
+import Contact from "@/components/rents/Contact";
 import Faq from "@/components/rents/Faq";
 import Navbar from "@/components/rents/Navbar";
 import Price from "@/components/rents/Price";
@@ -55,7 +56,10 @@ const rentalCar = () => {
       <Navbar />
       <Rents />
       <Price />
-      <Faq faqs={faqs} option={option} />
+      <div className="container mx-auto px-4 py-10 grid md:grid-cols-1 lg:grid-cols-2 gap-5">
+        <Faq faqs={faqs} />
+        <Contact option={option} />
+      </div>
       <Footer />
     </>
   );
