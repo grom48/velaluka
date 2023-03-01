@@ -47,7 +47,7 @@ const Faq = ({ faqs }: Props) => {
                 transition: { duration: 0.3, ease: "easeInOut" },
               }}
             >
-              {faq.answer}
+              <div dangerouslySetInnerHTML={{ __html: faq.answer }} />
             </motion.div>
           </div>
         ))}
