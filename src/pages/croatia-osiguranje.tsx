@@ -1,5 +1,5 @@
 import Image from "next/image";
-import brochure from "../../public/assets/img/croatia-osiguranje.png";
+import brochure from "../../public/assets/img/icons/crosig.png";
 const CroatiaOsiguranje = () => {
   return (
     <>
