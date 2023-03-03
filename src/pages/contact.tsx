@@ -5,6 +5,10 @@ import Navbar from "@/components/rents/Navbar";
 import Footer from "@/components/Footer";
 const option = [
   {
+    option: "other",
+    value: "other",
+  },
+  {
     option: "Chevrolet Lacetti",
     value: "Chevrolet Lacetti",
   },
@@ -33,6 +37,10 @@ const option = [
     value: "Fishing picnic",
   },
   {
+    option: "Fish licence",
+    value: "Fish licence",
+  },
+  {
     option: "Accommodation",
     value: "Accommodation",
   },
@@ -53,8 +61,8 @@ const option = [
     value: "Avio cards",
   },
   {
-    option: "Avio cards",
-    value: "Avio cards",
+    option: "Krilo kapetan",
+    value: "Krilo kapetan",
   },
 ];
 const contact = () => {

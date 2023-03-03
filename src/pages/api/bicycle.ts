@@ -25,7 +25,7 @@ const bicycle: Bicycle[] = [
   },
   {
     id: 1,
-    title: "Bike",
+    title: "Mountain Bike",
     spec: "",
     image: {
       src: bike2,

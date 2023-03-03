@@ -115,7 +115,7 @@ const Trips = () => {
               </Link>
               <Link
                 className="border-2 border-oceanBlue py-3 px-7 mt-10 rounded-full text-oceanBlue"
-                href="/contact"
+                href="/fish-licence"
               >
                 Fishing Licence
               </Link>

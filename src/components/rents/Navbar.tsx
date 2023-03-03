@@ -70,6 +70,9 @@ const Navbar = () => {
         <li>
           <Link href={"/real-estate"}>Real Estate</Link>
         </li>
+        <li>
+          <Link href={"/fish-licence"}>Fish Licence</Link>
+        </li>
         <li className="bg-oceanBlue py-3 px-7 rounded-full">
           <Link className="text-white" href={"/contact"}>
             Contact
@@ -133,6 +136,9 @@ const Navbar = () => {
           </li>
           <li className="z-50">
             <Link href={"/real-estate"}>Real Estate</Link>
+          </li>
+          <li className="z-50">
+            <Link href={"/fish-licence"}>Fish licence</Link>
           </li>
           <li className="bg-oceanBlue py-3 px-7 rounded-full">
             <Link className="text-white" href={"/contact"}>

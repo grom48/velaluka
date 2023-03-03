@@ -9,7 +9,10 @@ const Journey = () => {
           Come on Island of beauty with best affordable cars, scooter, boats and
           explore every inch of island.
         </p>
-        <Link className="bg-oceanBlue px-5 py-3 rounded-xl text-white" href="/">
+        <Link
+          className="bg-oceanBlue px-5 py-3 rounded-xl text-white"
+          href="/contact"
+        >
           Start your Journey
         </Link>
       </section>

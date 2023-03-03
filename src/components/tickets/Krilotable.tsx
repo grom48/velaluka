@@ -121,12 +121,6 @@ const Krilotable = () => {
           </TableBody>
         </Table>
       </TableContainer>
-      <Link
-        className="bg-oceanBlue py-3 px-7 mt-10 rounded-full text-white"
-        href="/contact"
-      >
-        Buy Ticket
-      </Link>
       <h4 className="py-10">
         Split - Brač - Makarska - Korčula - Mljet - Mljet - Dubrovnik
       </h4>
@@ -155,12 +149,6 @@ const Krilotable = () => {
           </TableBody>
         </Table>
       </TableContainer>
-      <Link
-        className="bg-oceanBlue py-3 px-7 mt-10 rounded-full text-white"
-        href="/contact"
-      >
-        Buy Ticket
-      </Link>
       <h4 className="py-10">Split – Hvar – Prigradica – Korčula</h4>
       <TableContainer component={Paper} className="mb-10">
         <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">

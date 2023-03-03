@@ -2,28 +2,22 @@ import Footer from "@/components/Footer";
 import Boat from "@/components/rents/Boat";
 import Faq from "@/components/rents/Faq";
 import Navbar from "@/components/rents/Navbar";
-import Price from "@/components/rents/Price";
 import Contact from "@/components/rents/Contact";
+import PriceBoat from "@/components/rents/PriceBoat";
 const faqs = [
   {
-    question: "Is insurance mandatory?",
-    answer: "Yes it's necessary if you want to rent a boat",
+    question: "What if I cancel my reservation?",
+    answer:
+      "In case of cancellation of a car or scooter rental reservation, we retain the advance payment paid to confirm the reservation.",
   },
   {
-    question:
-      "Why should Croatia arrange compulsory insurance for boats and yachts?",
+    question: "Is fuel included in price?",
     answer:
-      "Obvezno osiguranje plovila pokriva odgovornost vlasnika odnosno korisnika brodice ili jahte za naknadu štete zbog smrti, ozljede tijela, narušenja zdravlja plivača, ronilaca ili ljudi na kopnu. Vlasnici plovila su obvezni osigurati plovilo svake godine, a osiguranje se ugovara na godinu dana.",
+      "Fuel is not included in the price of the vehicle rental, and when returning, the vehicle must be returned with the same amount of fuel as it was picked up.",
   },
   {
-    question: "What is covered?",
-    answer:
-      "Liability for damage you cause to others, in case you kill, injure or harm someone with your vessel. The insured amount is prescribed by law and amounts to €464,529.83 (HRK 3,500,000.00) per event.",
-  },
-  {
-    question: "Are there any additional options?",
-    answer:
-      "Voluntary accident insurance. Insurance of the person driving the vessel and the passengers from the consequences of an accident.",
+    question: "Are skis or towing balloon included?",
+    answer: "Skis or towing balloon, as desired",
   },
 ];
 const option = [
@@ -49,7 +43,7 @@ const BoatRental = () => {
     <>
       <Navbar />
       <Boat />
-      <Price />
+      <PriceBoat />
       <div className="container mx-auto px-4 py-10 grid md:grid-cols-1 lg:grid-cols-2 gap-5">
         <Faq faqs={faqs} />
         <Contact option={option} />

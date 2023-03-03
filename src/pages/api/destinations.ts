@@ -25,7 +25,7 @@ const destination: Destination[] = [
       alt: "Visit Modra Špilja and Island Vis",
     },
     quote: "Best to visit",
-    route: "",
+    route: "excursion",
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ const destination: Destination[] = [
       alt: "Visit The stunning Uvala Stiniva",
     },
     quote: "Best beach",
-    route: "",
+    route: "excursion",
   },
   {
     id: 3,
@@ -49,7 +49,7 @@ const destination: Destination[] = [
       alt: "Visit and explore the fish picnic",
     },
     quote: "Adventure",
-    route: "",
+    route: "excursion",
   },
 ];
 

@@ -1,4 +1,9 @@
-import car from "../../../public/assets/img/car-small.png";
+import car from "../../../public/assets/img/icons/car-rental.png";
+import FishingPoleEmoji from "../../../public/assets/img/icons/fishing.png";
+import Bus from "../../../public/assets/img/icons/bus-ticket.png";
+import Guarantee from "../../../public/assets/img/icons/insurance.png";
+import FloatingIslandBeach from "../../../public/assets/img/icons/camping-tent.png";
+import apartment from "../../../public/assets/img/icons/real-estate.png";
 
 interface Categories {
   id: number;
@@ -22,26 +27,26 @@ const category: Categories[] = [
       alt: "Best Deal",
     },
     stars: 5,
-    route: "renta-car",
+    route: "car-rental",
   },
   {
     id: 2,
     title: "Vacation",
-    desc: "500+ happy clients",
+    desc: "150+ organized trips",
     image: {
-      src: car,
-      alt: "Best Deal",
+      src: FloatingIslandBeach,
+      alt: "Excursion",
     },
     stars: 5,
-    route: "vacation",
+    route: "excursion",
   },
   {
     id: 3,
     title: "Insurance",
-    desc: "500+ happy clients",
+    desc: "Protecting you in any way",
     image: {
-      src: car,
-      alt: "Best Deal",
+      src: Guarantee,
+      alt: "Guarantee",
     },
     stars: 5,
     route: "insurance",
@@ -49,46 +54,35 @@ const category: Categories[] = [
   {
     id: 4,
     title: "Real Estate",
-    desc: "500+ happy clients",
+    desc: "Buy or sell real estate",
     image: {
-      src: car,
-      alt: "Best Deal",
+      src: apartment,
+      alt: "House for rents",
     },
     stars: 5,
     route: "real-estate",
   },
   {
     id: 5,
-    title: "Real Estate",
-    desc: "500+ happy clients",
+    title: "Tickets",
+    desc: "Bus, boats, airplanes...",
     image: {
-      src: car,
-      alt: "Best Deal",
+      src: Bus,
+      alt: "Buy ticket for bus, boats, airplanes and more",
     },
     stars: 5,
-    route: "real-estate",
+    route: "tickets",
   },
   {
     id: 6,
-    title: "Real Estate",
-    desc: "500+ happy clients",
+    title: "Fish licence",
+    desc: "Sport fishing",
     image: {
-      src: car,
-      alt: "Best Deal",
+      src: FishingPoleEmoji,
+      alt: "Get licence for sport fishing",
     },
     stars: 5,
-    route: "real-estate",
-  },
-  {
-    id: 7,
-    title: "Real Estate",
-    desc: "500+ happy clients",
-    image: {
-      src: car,
-      alt: "Best Deal",
-    },
-    stars: 5,
-    route: "real-estate",
+    route: "fish-licence",
   },
 ];
 

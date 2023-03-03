@@ -84,6 +84,11 @@ const Category = () => {
                   </svg>
                 </div>
                 <Image
+                  style={{
+                    height: "",
+                    width: "50%",
+                    margin: "20px",
+                  }}
                   src={el.image.src}
                   alt={el.image.alt}
                   width={undefined}

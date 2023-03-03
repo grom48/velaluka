@@ -10,16 +10,16 @@ import Contact from "@/components/rents/Contact";
 
 const option = [
   {
-    option: "Modra špilja + otok Vis",
-    value: "Modra špilja + otok Vis",
+    option: "Home insurance",
+    value: "Home insurance",
   },
   {
-    option: "Uvala stiniva",
-    value: "Uvala stiniva",
+    option: "Travel insurance",
+    value: "Travel insurance",
   },
   {
-    option: "Fish picnic",
-    value: "Fish picnic",
+    option: "Insurance question",
+    value: "Insurance question",
   },
 ];
 

@@ -57,25 +57,14 @@ const Offers = () => {
           <div className="left-insurance-content">
             <h3 className="insuranceTitle">Home Insurance</h3>
             <p>
-              Insure yourself against health care costs during your stay in
-              abroad for 45 days.
+              With one policy, insure your property and its contents against
+              damage caused by burglary, fire, earthquake and other risks.
             </p>
             <div className="price-selection second">
               <ul className="gap-5 flex flex-col">
                 <h4>What is included?</h4>
-                <li>Health care and emergency medical expenses.</li>
-                <li>
-                  Transportation by ambulance or helicopter to the nearest
-                  hospital.
-                </li>
-                <li>
-                  Transportation to your home country if you cannot return home
-                  as planned due to health reasons.
-                </li>
-                <li>
-                  Costs of hospital treatment and transportation of insured
-                  persons to their homeland due to illness from Covid-19
-                </li>
+                <li>Things in the household.</li>
+                <li>Construction part.</li>
               </ul>
             </div>
             <div className="flex items-center gap-10 btnInsure">
