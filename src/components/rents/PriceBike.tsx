@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import rentImage from "../../../public/assets/img/rent-picture.jpg";
 const PriceBike = () => {

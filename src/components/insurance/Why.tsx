@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import hours from "../../../public/assets/img/icons/hours24.png";
 import carpool from "../../../public/assets/img/icons/Carpool.png";
@@ -81,7 +80,7 @@ const Why = () => {
         <h2 className="insuranceTitle text-center py-8">Why choose us?</h2>
         <div className="why-wrapper grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 py-5 px-4">
           {data.slice(0, 3).map((el: any, key: any) => (
-            <div className="content">
+            <div className="content" key={key}>
               <Image src={el.logo.image} alt={el.logo.alt} />
               <h4 className="whyTitle">{el.name}</h4>
               <p>{el.desc}</p>
@@ -90,7 +89,7 @@ const Why = () => {
         </div>
         <div className="why-wrapper grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 py-5 px-4">
           {data.slice(3, 6).map((el: any, key: any) => (
-            <div className="content">
+            <div className="content" key={key}>
               <Image src={el.logo.image} alt={el.logo.alt} />
               <h4 className="whyTitle">{el.name}</h4>
               <p>{el.desc}</p>

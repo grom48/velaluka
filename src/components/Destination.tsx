@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import destination from "@/pages/api/destinations";
 import Link from "next/link";

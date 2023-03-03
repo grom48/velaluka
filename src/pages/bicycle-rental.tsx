@@ -1,4 +1,3 @@
-import React from "react";
 import Footer from "@/components/Footer";
 import Bicycle from "@/components/rents/Bicycle";
 import Faq from "@/components/rents/Faq";

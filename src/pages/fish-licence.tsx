@@ -1,5 +1,4 @@
 import Navbar from "@/components/rents/Navbar";
-import React from "react";
 import Image from "next/image";
 import fish from "../../public/assets/img/fish.jpg";
 import Faq from "@/components/rents/Faq";

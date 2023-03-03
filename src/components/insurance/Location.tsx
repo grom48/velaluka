@@ -1,12 +1,3 @@
-import React from "react";
-import Contact from "../rents/Contact";
-
-const option = [
-  {
-    option: "Scooter 50cm3",
-    value: "Scooter 50cm3",
-  },
-];
 const Location = () => {
   return (
     <>

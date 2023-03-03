@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import korcula from "../../public/assets/img/korcula.jpg";
@@ -28,10 +27,10 @@ const Who = () => {
             </p>
             <p className="mb-10">
               By ingesting pure elixirs of life, the body wakes up and becomes
-              healthy, and the famous saying "you are what you eat" will be
-              proven many times.In order to visit all the beauties of Korčula
-              both by land and by sea, we offer vehicle rental options that best
-              suit your needs and possibilities.
+              healthy, and the famous saying &quot;you are what you eat&quot;
+              will be proven many times.In order to visit all the beauties of
+              Korčula both by land and by sea, we offer vehicle rental options
+              that best suit your needs and possibilities.
             </p>
             <Link
               className="bg-oceanBlue py-3 px-7 rounded-full text-white"

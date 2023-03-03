@@ -1,4 +1,4 @@
-export default function (req: any, res: any) {
+export default function contact(req: any, res: any) {
   require("dotenv").config();
 
   let nodemailer = require("nodemailer");
@@ -14,7 +14,7 @@ export default function (req: any, res: any) {
   });
   const mailData = {
     from: "slanje.mailova1@gmail.com",
-    to: "viktorbilokapic@gmail.com",
+    to: "",
     subject: `Message From ${req.body.name}`,
     text: req.body.message + " | Sent from: " + req.body.email,
     html: `

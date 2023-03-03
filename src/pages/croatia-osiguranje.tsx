@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Image from "next/image";
 import brochure from "../../public/assets/img/croatia-osiguranje.png";
 const CroatiaOsiguranje = () => {

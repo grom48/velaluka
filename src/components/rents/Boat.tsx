@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import boats from "@/pages/api/boats";
 const Boat = () => {

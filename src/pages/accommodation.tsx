@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "@/components/rents/Navbar";
 import Image from "next/image";
 import apartmentImage from "../../public/assets/img/apartments.jpg";

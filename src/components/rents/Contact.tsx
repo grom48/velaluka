@@ -133,8 +133,10 @@ const Contact = ({ option }: any) => {
           value={selectedVehicle}
           onChange={(e) => setSelectedVehicle(e.target.value)}
         >
-          {option.map((el: any) => (
-            <option value={el.value}>{el.option}</option>
+          {option.map((el: any, key: any) => (
+            <option key={key} value={el.value}>
+              {el.option}
+            </option>
           ))}
         </select>
         <textarea

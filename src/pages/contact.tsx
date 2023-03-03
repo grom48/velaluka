@@ -1,4 +1,3 @@
-import React from "react";
 import Contact from "@/components/rents/Contact";
 import Location from "@/components/excursion/Location";
 import Navbar from "@/components/rents/Navbar";
